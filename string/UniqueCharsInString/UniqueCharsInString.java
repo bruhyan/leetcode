@@ -10,6 +10,9 @@ public class UniqueCharsInString {
 
     // returns true if string contains unique characters
     // assumption string only contain alphabets a-z
+    // time complexity: O(n) -> worst case traverse entire string
+    // space complexity: O(n) -> char array
+    // although boolean array is extra DS, it is constant at 26 characters
     public static boolean isCharsUniqueInString(String s) {
         char[] sArr = s.toCharArray();
         boolean[] charExist = new boolean[26];
